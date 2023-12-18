@@ -1,6 +1,9 @@
 ---
 
 import '../styles/global.css'
+import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
+
 const pageTitle = ' My astro site'
 const baseUrl = 'learning-astro'
 ---
@@ -14,10 +17,10 @@ const baseUrl = 'learning-astro'
 		<title>{pageTitle}</title>
 	</head>
 	<body>
-    <a href="/learning-astro/">Home</a>
-    <a href="/learning-astro/about">About</a>
-    <a href="/learning-astro/blog">Blog</a>
-
+    <Header/>
+    <h1>Cualquier web dentro de la etiqueta OBJECT</h1>
+    <object data="https://progredemente.com/labs/" type="text/html" width="1920" height="1080"></object>
 		<h1>{pageTitle}</h1>
+    <Footer/>
 	</body>
 </html>
